@@ -1,5 +1,5 @@
 //
-//  StubComponent.swift
+//  StubSwiftComponent.swift
 //  TestObjcSwiftCircularReference
 //
 //  Created by Mattia Campolese on 24/08/2017.
@@ -10,7 +10,7 @@ import Foundation
 @testable import TestObjcSwiftCircularReference
 
 @objc
-class StubComponent: NSObject, ComponentProtocol {
+class StubSwiftComponent: NSObject, ComponentProtocol {
     
     func testFunction() -> Int {
         return 42

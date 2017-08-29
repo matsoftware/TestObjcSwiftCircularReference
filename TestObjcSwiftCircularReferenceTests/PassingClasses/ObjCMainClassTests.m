@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 #import "ObjCMainClass.h"
-#import "TestObjcSwiftCircularReferenceTests-Swift.h"
+#import "StubObjcComponent.h"
 
 @interface ObjCMainClassTests : XCTestCase
 
-@property (nonatomic, strong) StubSwiftComponent *stubSwiftComponent;
+@property (nonatomic, strong) StubObjcComponent *stubObjcComponent;
 @property (nonatomic, strong) ObjCMainClass *subject;
 
 @end
@@ -21,13 +21,13 @@
 
 - (void)setUp {
     [super setUp];
-    self.stubSwiftComponent = [StubSwiftComponent new];
+    self.stubObjcComponent = [StubObjcComponent new];
     self.subject = [ObjCMainClass new];
-    self.subject.component = self.stubSwiftComponent;
+    self.subject.component = self.stubObjcComponent;
 }
 
 - (void)tearDown {
-    self.stubSwiftComponent = nil;
+    self.stubObjcComponent = nil;
     self.subject = nil;
     [super tearDown];
 }

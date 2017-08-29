@@ -7,18 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E534A43F1F55A9DE0096C866 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E563E88E1F4F75A9009ADC94 /* ViewController.swift */; };
+		E534A4401F55A9DE0096C866 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E563E88C1F4F75A9009ADC94 /* AppDelegate.swift */; };
+		E534A4441F55A9DE0096C866 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E563E8951F4F75A9009ADC94 /* LaunchScreen.storyboard */; };
+		E534A4451F55A9DE0096C866 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E563E8931F4F75A9009ADC94 /* Assets.xcassets */; };
+		E534A4461F55A9DE0096C866 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E563E8901F4F75A9009ADC94 /* Main.storyboard */; };
+		E534A4511F55AC200096C866 /* ObjcMainClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E534A44F1F55AC1D0096C866 /* ObjcMainClass.m */; };
+		E534A4541F55ACF90096C866 /* ObjCMainClassTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ECCCBB1F4F788C00341904 /* ObjCMainClassTests.m */; };
+		E534A4581F55AD5A0096C866 /* ObjCMainClassTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E534A4561F55AD1D0096C866 /* ObjCMainClassTests.m */; };
+		E534A45B1F55AD9E0096C866 /* StubObjcComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = E534A45A1F55AD9E0096C866 /* StubObjcComponent.m */; };
 		E563E88D1F4F75A9009ADC94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E563E88C1F4F75A9009ADC94 /* AppDelegate.swift */; };
 		E563E88F1F4F75A9009ADC94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E563E88E1F4F75A9009ADC94 /* ViewController.swift */; };
 		E563E8921F4F75A9009ADC94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E563E8901F4F75A9009ADC94 /* Main.storyboard */; };
 		E563E8941F4F75A9009ADC94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E563E8931F4F75A9009ADC94 /* Assets.xcassets */; };
 		E563E8971F4F75A9009ADC94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E563E8951F4F75A9009ADC94 /* LaunchScreen.storyboard */; };
 		E5ECCCA91F4F763400341904 /* ObjCMainClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ECCCA81F4F763400341904 /* ObjCMainClass.m */; };
-		E5ECCCBC1F4F788C00341904 /* ObjCMainClassTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ECCCBB1F4F788C00341904 /* ObjCMainClassTests.m */; };
-		E5ECCCBF1F4F78AB00341904 /* StubComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ECCCBE1F4F78AB00341904 /* StubComponent.swift */; };
+		E5ECCCBF1F4F78AB00341904 /* StubSwiftComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ECCCBE1F4F78AB00341904 /* StubSwiftComponent.swift */; };
 		E5ECCCC41F4F7E2000341904 /* ComponentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ECCCAB1F4F767700341904 /* ComponentProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		E534A42F1F55A91F0096C866 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E563E8811F4F75A9009ADC94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E563E8881F4F75A9009ADC94;
+			remoteInfo = TestObjcSwiftCircularReference;
+		};
 		E5ECCCB61F4F76E300341904 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E563E8811F4F75A9009ADC94 /* Project object */;
@@ -29,7 +44,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E563E8891F4F75A9009ADC94 /* TestObjcSwiftCircularReference.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestObjcSwiftCircularReference.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E534A4171F55A34D0096C866 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E534A4271F55A34D0096C866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E534A4381F55A91F0096C866 /* TestObjcSwiftCircularReferencePassingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestObjcSwiftCircularReferencePassingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E534A4391F55A91F0096C866 /* TestObjcSwiftCircularReferenceFailingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TestObjcSwiftCircularReferenceFailingTests-Info.plist"; path = "/Users/matsoftware/Documents/PROGRAMMAZIONE/GITHUB/TestObjcSwiftCircularReference/TestObjcSwiftCircularReferenceFailingTests-Info.plist"; sourceTree = "<absolute>"; };
+		E534A44A1F55A9DE0096C866 /* TestObjcSwiftCircularReferencePassing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestObjcSwiftCircularReferencePassing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E534A44B1F55A9DF0096C866 /* TestObjcSwiftCircularReferenceFailing-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TestObjcSwiftCircularReferenceFailing-Info.plist"; path = "/Users/matsoftware/Documents/PROGRAMMAZIONE/GITHUB/TestObjcSwiftCircularReference/TestObjcSwiftCircularReferenceFailing-Info.plist"; sourceTree = "<absolute>"; };
+		E534A44D1F55AB9D0096C866 /* ComponentProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComponentProtocol.h; sourceTree = "<group>"; };
+		E534A44F1F55AC1D0096C866 /* ObjcMainClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ObjcMainClass.m; path = PassingClasses/ObjcMainClass.m; sourceTree = "<group>"; };
+		E534A4561F55AD1D0096C866 /* ObjCMainClassTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ObjCMainClassTests.m; path = PassingClasses/ObjCMainClassTests.m; sourceTree = "<group>"; };
+		E534A4591F55AD9E0096C866 /* StubObjcComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StubObjcComponent.h; path = PassingClasses/StubObjcComponent.h; sourceTree = "<group>"; };
+		E534A45A1F55AD9E0096C866 /* StubObjcComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StubObjcComponent.m; path = PassingClasses/StubObjcComponent.m; sourceTree = "<group>"; };
+		E563E8891F4F75A9009ADC94 /* TestObjcSwiftCircularReferenceFailing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestObjcSwiftCircularReferenceFailing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E563E88C1F4F75A9009ADC94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E563E88E1F4F75A9009ADC94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E563E8911F4F75A9009ADC94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,14 +66,28 @@
 		E5ECCCA71F4F763400341904 /* ObjCMainClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCMainClass.h; sourceTree = "<group>"; };
 		E5ECCCA81F4F763400341904 /* ObjCMainClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCMainClass.m; sourceTree = "<group>"; };
 		E5ECCCAB1F4F767700341904 /* ComponentProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentProtocol.swift; sourceTree = "<group>"; };
-		E5ECCCB11F4F76E300341904 /* TestObjcSwiftCircularReferenceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestObjcSwiftCircularReferenceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5ECCCB11F4F76E300341904 /* TestObjcSwiftCircularReferenceFailingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestObjcSwiftCircularReferenceFailingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5ECCCB51F4F76E300341904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5ECCCBB1F4F788C00341904 /* ObjCMainClassTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCMainClassTests.m; sourceTree = "<group>"; };
 		E5ECCCBD1F4F78AB00341904 /* TestObjcSwiftCircularReferenceTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestObjcSwiftCircularReferenceTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		E5ECCCBE1F4F78AB00341904 /* StubComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubComponent.swift; sourceTree = "<group>"; };
+		E5ECCCBE1F4F78AB00341904 /* StubSwiftComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubSwiftComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E534A4331F55A91F0096C866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E534A4421F55A9DE0096C866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E563E8861F4F75A9009ADC94 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -65,6 +105,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E534A4151F55A34D0096C866 /* TestObjcSwiftCircularReferencePassing */ = {
+			isa = PBXGroup;
+			children = (
+				E534A4271F55A34D0096C866 /* Info.plist */,
+				E534A4161F55A34D0096C866 /* Supporting Files */,
+			);
+			path = TestObjcSwiftCircularReferencePassing;
+			sourceTree = SOURCE_ROOT;
+		};
+		E534A4161F55A34D0096C866 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E534A4171F55A34D0096C866 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E534A44C1F55AB580096C866 /* Failing */ = {
+			isa = PBXGroup;
+			children = (
+				E5ECCCAB1F4F767700341904 /* ComponentProtocol.swift */,
+				E5ECCCA81F4F763400341904 /* ObjCMainClass.m */,
+			);
+			name = Failing;
+			sourceTree = "<group>";
+		};
+		E534A44E1F55ABA10096C866 /* Passing */ = {
+			isa = PBXGroup;
+			children = (
+				E534A44D1F55AB9D0096C866 /* ComponentProtocol.h */,
+				E534A44F1F55AC1D0096C866 /* ObjcMainClass.m */,
+			);
+			name = Passing;
+			sourceTree = "<group>";
+		};
+		E534A4521F55ACB60096C866 /* Failing */ = {
+			isa = PBXGroup;
+			children = (
+				E5ECCCBB1F4F788C00341904 /* ObjCMainClassTests.m */,
+				E5ECCCBE1F4F78AB00341904 /* StubSwiftComponent.swift */,
+			);
+			name = Failing;
+			sourceTree = "<group>";
+		};
+		E534A4531F55ACBE0096C866 /* BoilerplateResources */ = {
+			isa = PBXGroup;
+			children = (
+				E5ECCCB51F4F76E300341904 /* Info.plist */,
+				E5ECCCBD1F4F78AB00341904 /* TestObjcSwiftCircularReferenceTests-Bridging-Header.h */,
+			);
+			name = BoilerplateResources;
+			sourceTree = "<group>";
+		};
+		E534A4551F55ACFE0096C866 /* Passing */ = {
+			isa = PBXGroup;
+			children = (
+				E534A4561F55AD1D0096C866 /* ObjCMainClassTests.m */,
+				E534A4591F55AD9E0096C866 /* StubObjcComponent.h */,
+				E534A45A1F55AD9E0096C866 /* StubObjcComponent.m */,
+			);
+			name = Passing;
+			sourceTree = "<group>";
+		};
 		E563E8801F4F75A9009ADC94 = {
 			isa = PBXGroup;
 			children = (
@@ -77,8 +180,10 @@
 		E563E88A1F4F75A9009ADC94 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E563E8891F4F75A9009ADC94 /* TestObjcSwiftCircularReference.app */,
-				E5ECCCB11F4F76E300341904 /* TestObjcSwiftCircularReferenceTests.xctest */,
+				E563E8891F4F75A9009ADC94 /* TestObjcSwiftCircularReferenceFailing.app */,
+				E5ECCCB11F4F76E300341904 /* TestObjcSwiftCircularReferenceFailingTests.xctest */,
+				E534A4381F55A91F0096C866 /* TestObjcSwiftCircularReferencePassingTests.xctest */,
+				E534A44A1F55A9DE0096C866 /* TestObjcSwiftCircularReferencePassing.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,9 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				E5ECCCA71F4F763400341904 /* ObjCMainClass.h */,
-				E5ECCCA81F4F763400341904 /* ObjCMainClass.m */,
-				E5ECCCAB1F4F767700341904 /* ComponentProtocol.swift */,
-				E5ECCCA61F4F763400341904 /* TestObjcSwiftCircularReference-Bridging-Header.h */,
+				E534A44C1F55AB580096C866 /* Failing */,
+				E534A44E1F55ABA10096C866 /* Passing */,
 				E5ECCCAA1F4F764500341904 /* BoilerplateResources */,
 			);
 			path = TestObjcSwiftCircularReference;
@@ -98,12 +202,16 @@
 		E5ECCCAA1F4F764500341904 /* BoilerplateResources */ = {
 			isa = PBXGroup;
 			children = (
+				E534A4151F55A34D0096C866 /* TestObjcSwiftCircularReferencePassing */,
+				E5ECCCA61F4F763400341904 /* TestObjcSwiftCircularReference-Bridging-Header.h */,
 				E563E8901F4F75A9009ADC94 /* Main.storyboard */,
 				E563E8931F4F75A9009ADC94 /* Assets.xcassets */,
 				E563E8951F4F75A9009ADC94 /* LaunchScreen.storyboard */,
 				E563E8981F4F75A9009ADC94 /* Info.plist */,
 				E563E88C1F4F75A9009ADC94 /* AppDelegate.swift */,
 				E563E88E1F4F75A9009ADC94 /* ViewController.swift */,
+				E534A4391F55A91F0096C866 /* TestObjcSwiftCircularReferenceFailingTests-Info.plist */,
+				E534A44B1F55A9DF0096C866 /* TestObjcSwiftCircularReferenceFailing-Info.plist */,
 			);
 			name = BoilerplateResources;
 			sourceTree = "<group>";
@@ -111,10 +219,9 @@
 		E5ECCCB21F4F76E300341904 /* TestObjcSwiftCircularReferenceTests */ = {
 			isa = PBXGroup;
 			children = (
-				E5ECCCBB1F4F788C00341904 /* ObjCMainClassTests.m */,
-				E5ECCCB51F4F76E300341904 /* Info.plist */,
-				E5ECCCBE1F4F78AB00341904 /* StubComponent.swift */,
-				E5ECCCBD1F4F78AB00341904 /* TestObjcSwiftCircularReferenceTests-Bridging-Header.h */,
+				E534A4521F55ACB60096C866 /* Failing */,
+				E534A4551F55ACFE0096C866 /* Passing */,
+				E534A4531F55ACBE0096C866 /* BoilerplateResources */,
 			);
 			path = TestObjcSwiftCircularReferenceTests;
 			sourceTree = "<group>";
@@ -122,9 +229,44 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E563E8881F4F75A9009ADC94 /* TestObjcSwiftCircularReference */ = {
+		E534A42D1F55A91F0096C866 /* TestObjcSwiftCircularReferencePassingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E563E89B1F4F75A9009ADC94 /* Build configuration list for PBXNativeTarget "TestObjcSwiftCircularReference" */;
+			buildConfigurationList = E534A4351F55A91F0096C866 /* Build configuration list for PBXNativeTarget "TestObjcSwiftCircularReferencePassingTests" */;
+			buildPhases = (
+				E534A4301F55A91F0096C866 /* Sources */,
+				E534A4331F55A91F0096C866 /* Frameworks */,
+				E534A4341F55A91F0096C866 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E534A42E1F55A91F0096C866 /* PBXTargetDependency */,
+			);
+			name = TestObjcSwiftCircularReferencePassingTests;
+			productName = TestObjcSwiftCircularReferenceTests;
+			productReference = E534A4381F55A91F0096C866 /* TestObjcSwiftCircularReferencePassingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E534A43C1F55A9DE0096C866 /* TestObjcSwiftCircularReferencePassing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E534A4471F55A9DE0096C866 /* Build configuration list for PBXNativeTarget "TestObjcSwiftCircularReferencePassing" */;
+			buildPhases = (
+				E534A43D1F55A9DE0096C866 /* Sources */,
+				E534A4421F55A9DE0096C866 /* Frameworks */,
+				E534A4431F55A9DE0096C866 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestObjcSwiftCircularReferencePassing;
+			productName = TestObjcSwiftCircularReference;
+			productReference = E534A44A1F55A9DE0096C866 /* TestObjcSwiftCircularReferencePassing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E563E8881F4F75A9009ADC94 /* TestObjcSwiftCircularReferenceFailing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E563E89B1F4F75A9009ADC94 /* Build configuration list for PBXNativeTarget "TestObjcSwiftCircularReferenceFailing" */;
 			buildPhases = (
 				E563E8851F4F75A9009ADC94 /* Sources */,
 				E563E8861F4F75A9009ADC94 /* Frameworks */,
@@ -134,14 +276,14 @@
 			);
 			dependencies = (
 			);
-			name = TestObjcSwiftCircularReference;
+			name = TestObjcSwiftCircularReferenceFailing;
 			productName = TestObjcSwiftCircularReference;
-			productReference = E563E8891F4F75A9009ADC94 /* TestObjcSwiftCircularReference.app */;
+			productReference = E563E8891F4F75A9009ADC94 /* TestObjcSwiftCircularReferenceFailing.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E5ECCCB01F4F76E300341904 /* TestObjcSwiftCircularReferenceTests */ = {
+		E5ECCCB01F4F76E300341904 /* TestObjcSwiftCircularReferenceFailingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E5ECCCBA1F4F76E300341904 /* Build configuration list for PBXNativeTarget "TestObjcSwiftCircularReferenceTests" */;
+			buildConfigurationList = E5ECCCBA1F4F76E300341904 /* Build configuration list for PBXNativeTarget "TestObjcSwiftCircularReferenceFailingTests" */;
 			buildPhases = (
 				E5ECCCAD1F4F76E300341904 /* Sources */,
 				E5ECCCAE1F4F76E300341904 /* Frameworks */,
@@ -152,9 +294,9 @@
 			dependencies = (
 				E5ECCCB71F4F76E300341904 /* PBXTargetDependency */,
 			);
-			name = TestObjcSwiftCircularReferenceTests;
+			name = TestObjcSwiftCircularReferenceFailingTests;
 			productName = TestObjcSwiftCircularReferenceTests;
-			productReference = E5ECCCB11F4F76E300341904 /* TestObjcSwiftCircularReferenceTests.xctest */;
+			productReference = E5ECCCB11F4F76E300341904 /* TestObjcSwiftCircularReferenceFailingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -167,6 +309,13 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Easyfuture LTD";
 				TargetAttributes = {
+					E534A42D1F55A91F0096C866 = {
+						DevelopmentTeam = EUPRJDEKWL;
+						TestTargetID = E534A4131F55A34C0096C866;
+					};
+					E534A43C1F55A9DE0096C866 = {
+						DevelopmentTeam = EUPRJDEKWL;
+					};
 					E563E8881F4F75A9009ADC94 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = EUPRJDEKWL;
@@ -195,13 +344,32 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E563E8881F4F75A9009ADC94 /* TestObjcSwiftCircularReference */,
-				E5ECCCB01F4F76E300341904 /* TestObjcSwiftCircularReferenceTests */,
+				E563E8881F4F75A9009ADC94 /* TestObjcSwiftCircularReferenceFailing */,
+				E5ECCCB01F4F76E300341904 /* TestObjcSwiftCircularReferenceFailingTests */,
+				E534A43C1F55A9DE0096C866 /* TestObjcSwiftCircularReferencePassing */,
+				E534A42D1F55A91F0096C866 /* TestObjcSwiftCircularReferencePassingTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E534A4341F55A91F0096C866 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E534A4431F55A9DE0096C866 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E534A4441F55A9DE0096C866 /* LaunchScreen.storyboard in Resources */,
+				E534A4451F55A9DE0096C866 /* Assets.xcassets in Resources */,
+				E534A4461F55A9DE0096C866 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E563E8871F4F75A9009ADC94 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,6 +390,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E534A4301F55A91F0096C866 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E534A4581F55AD5A0096C866 /* ObjCMainClassTests.m in Sources */,
+				E534A45B1F55AD9E0096C866 /* StubObjcComponent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E534A43D1F55A9DE0096C866 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E534A4511F55AC200096C866 /* ObjcMainClass.m in Sources */,
+				E534A43F1F55A9DE0096C866 /* ViewController.swift in Sources */,
+				E534A4401F55A9DE0096C866 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E563E8851F4F75A9009ADC94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -237,17 +424,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5ECCCBC1F4F788C00341904 /* ObjCMainClassTests.m in Sources */,
-				E5ECCCBF1F4F78AB00341904 /* StubComponent.swift in Sources */,
+				E5ECCCBF1F4F78AB00341904 /* StubSwiftComponent.swift in Sources */,
+				E534A4541F55ACF90096C866 /* ObjCMainClassTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		E534A42E1F55A91F0096C866 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E563E8881F4F75A9009ADC94 /* TestObjcSwiftCircularReferenceFailing */;
+			targetProxy = E534A42F1F55A91F0096C866 /* PBXContainerItemProxy */;
+		};
 		E5ECCCB71F4F76E300341904 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E563E8881F4F75A9009ADC94 /* TestObjcSwiftCircularReference */;
+			target = E563E8881F4F75A9009ADC94 /* TestObjcSwiftCircularReferenceFailing */;
 			targetProxy = E5ECCCB61F4F76E300341904 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -272,6 +464,76 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E534A4361F55A91F0096C866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = EUPRJDEKWL;
+				INFOPLIST_FILE = "TestObjcSwiftCircularReferenceFailingTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.easyfutureltd.TestObjcSwiftCircularReferenceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestObjcSwiftCircularReferenceTests/TestObjcSwiftCircularReferenceTests-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "TestObjcSwiftCircularReferenceTests-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestObjcSwiftCircularReferencePassing.app/TestObjcSwiftCircularReferencePassing";
+			};
+			name = Debug;
+		};
+		E534A4371F55A91F0096C866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = EUPRJDEKWL;
+				INFOPLIST_FILE = "TestObjcSwiftCircularReferenceFailingTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.easyfutureltd.TestObjcSwiftCircularReferenceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestObjcSwiftCircularReferenceTests/TestObjcSwiftCircularReferenceTests-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "TestObjcSwiftCircularReferenceTests-Swift.h";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestObjcSwiftCircularReferencePassing.app/TestObjcSwiftCircularReferencePassing";
+			};
+			name = Release;
+		};
+		E534A4481F55A9DE0096C866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = EUPRJDEKWL;
+				INFOPLIST_FILE = "TestObjcSwiftCircularReferenceFailing-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.easyfutureltd.TestObjcSwiftCircularReference;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestObjcSwiftCircularReference/TestObjcSwiftCircularReference-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "TestObjcSwiftCircularReference-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E534A4491F55A9DE0096C866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = EUPRJDEKWL;
+				INFOPLIST_FILE = "TestObjcSwiftCircularReferenceFailing-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.easyfutureltd.TestObjcSwiftCircularReference;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestObjcSwiftCircularReference/TestObjcSwiftCircularReference-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "TestObjcSwiftCircularReference-Swift.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		E563E8991F4F75A9009ADC94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -297,6 +559,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -348,6 +611,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -378,6 +642,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uk.easyfutureltd.TestObjcSwiftCircularReference;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TestObjcSwiftCircularReference/TestObjcSwiftCircularReference-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "TestObjcSwiftCircularReference-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -394,6 +659,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uk.easyfutureltd.TestObjcSwiftCircularReference;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TestObjcSwiftCircularReference/TestObjcSwiftCircularReference-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "TestObjcSwiftCircularReference-Swift.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -410,9 +676,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uk.easyfutureltd.TestObjcSwiftCircularReferenceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TestObjcSwiftCircularReferenceTests/TestObjcSwiftCircularReferenceTests-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "TestObjcSwiftCircularReferenceTests-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestObjcSwiftCircularReference.app/TestObjcSwiftCircularReference";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestObjcSwiftCircularReferenceFailing.app/TestObjcSwiftCircularReferenceFailing";
 			};
 			name = Debug;
 		};
@@ -428,14 +695,33 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uk.easyfutureltd.TestObjcSwiftCircularReferenceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TestObjcSwiftCircularReferenceTests/TestObjcSwiftCircularReferenceTests-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "TestObjcSwiftCircularReferenceTests-Swift.h";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestObjcSwiftCircularReference.app/TestObjcSwiftCircularReference";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestObjcSwiftCircularReferenceFailing.app/TestObjcSwiftCircularReferenceFailing";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E534A4351F55A91F0096C866 /* Build configuration list for PBXNativeTarget "TestObjcSwiftCircularReferencePassingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E534A4361F55A91F0096C866 /* Debug */,
+				E534A4371F55A91F0096C866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E534A4471F55A9DE0096C866 /* Build configuration list for PBXNativeTarget "TestObjcSwiftCircularReferencePassing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E534A4481F55A9DE0096C866 /* Debug */,
+				E534A4491F55A9DE0096C866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E563E8841F4F75A9009ADC94 /* Build configuration list for PBXProject "TestObjcSwiftCircularReference" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -445,7 +731,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E563E89B1F4F75A9009ADC94 /* Build configuration list for PBXNativeTarget "TestObjcSwiftCircularReference" */ = {
+		E563E89B1F4F75A9009ADC94 /* Build configuration list for PBXNativeTarget "TestObjcSwiftCircularReferenceFailing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E563E89C1F4F75A9009ADC94 /* Debug */,
@@ -454,13 +740,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E5ECCCBA1F4F76E300341904 /* Build configuration list for PBXNativeTarget "TestObjcSwiftCircularReferenceTests" */ = {
+		E5ECCCBA1F4F76E300341904 /* Build configuration list for PBXNativeTarget "TestObjcSwiftCircularReferenceFailingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E5ECCCB81F4F76E300341904 /* Debug */,
 				E5ECCCB91F4F76E300341904 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
